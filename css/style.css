@@ -19,8 +19,8 @@ header {
 }
 @media only screen and (max-width: 1050px) {
     .logo {
-        left: 1em;
-        top: 1em;
+        left: 0.5em;
+        top: 1.2em;
         margin-right: 1em;
     }
     #logoimage {
@@ -54,7 +54,7 @@ li a {
 }
 @media only screen and (max-width: 1050px) {
     ul {
-        margin-left: 2em;
+        margin-left: 4em;
         padding: 0.5em;
     }
     li {
