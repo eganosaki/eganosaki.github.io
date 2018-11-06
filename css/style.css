@@ -23,7 +23,7 @@ header {
         top: 1em;
     }
     #logoimage {
-        width: 6em;
+        width: 5em;
     }
 }
 ul {
@@ -53,11 +53,11 @@ li a {
 }
 @media only screen and (max-width: 1050px) {
     ul {
-        margin-left: 5em;
+        margin-left: 4em;
         padding: 0.5em;
     }
     li {
-        margin-left: 2.5em;
+        margin-left: 2.25em;
     }
     li a {
         padding: 0.5em;
