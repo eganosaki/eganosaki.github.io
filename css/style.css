@@ -54,15 +54,15 @@ li a {
 }
 @media only screen and (max-width: 1050px) {
     ul {
-        margin-left: 1vw;
+        margin-left: 2em;
         padding: 0.5em;
-        display: none;
+        display: 
     }
     li {
-        margin-left: 1vw;
+        margin-left: 1em;
     }
     li a {
-        padding: 1vw;
+        padding: 0.5em;
     }
 }
 #profilepicimage {
