@@ -17,8 +17,14 @@ header {
 #logoimage {
     width: 10em;
 }
-nav {
-    
+@media only screen and (max-width: 1050px) {
+    .logo {
+        left: 1em;
+        top: 1em;
+    }
+    #logoimage {
+        width: 6em;
+    }
 }
 ul {
     list-style-type: none;
@@ -45,17 +51,28 @@ li a {
     text-decoration: none;
     font-size: 1em;
 }
+@media only screen and (max-width: 1050px) {
+    ul {
+        margin-left: 5em;
+        padding: 0.5em;
+    }
+    li {
+        margin-left: 2.5em;
+    }
+    li a {
+        padding: 0.5em;
+    }
+}
 #profilepicimage {
     overflow: hidden;
-    width: 350px;
-    height: 300px;
+    width: 30%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 h1 {
     text-align: center;
-    font-size: 2.5em;
+    font-size: 3vw;
     color: #ff9300;
     margin-left: 30%;
     margin-right: 30%;
@@ -64,16 +81,33 @@ h1 {
     border-right: 2px solid #ff9300;
     border-left: 2px solid #ff9300;
 }
-.background p {
+h2 {
     text-align: center;
-    font-size: 1.25em;
+    font-size: 3vw;
+    color: #ff9300;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+p {
+    text-align: center;
+    font-size: 1.3em;
     margin-left: 22%;
     margin-right: 22%;
+    margin-bottom: 5%;
+}
+@media only screen and (max-width: 1050px){
+    p {
+        font-size: 1em;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 #skillsimage {
     overflow: hidden;
-    width: auto;
-    height: 600px;
+    width: 60%;
+    min-width: 400px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -86,4 +120,47 @@ h1 {
     margin-bottom: 2em;
     padding: 1em;
     line-height: 2em;
+}
+@media only screen and (max-width: 1050px) {
+    #contactinfo {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+img {
+    width: 100%;
+    border: 1px solid #282828;
+}
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #ff9300;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+  background-color: #282828;
+}
+.numberslide {
+  color: #ff9300;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }

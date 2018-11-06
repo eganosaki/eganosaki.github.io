@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Egan Osaki">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Egan Osaki Portfolio</title>
+</head>
+<body>
+    
+<div class="wrapper">
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/eganosakilogo.png" id="logoimage" alt="eganosakilogo"></a>
+        </div>
+    <nav class="pagenav" id="mypagenav">
+        <ul>
+            <li>
+                <a href="index.html">About</a>
+            </li>
+            <li>
+                <a href="process.html">Process</a>
+            </li>
+            <li>
+                <a href="portfolio.html">Portfolio</a>
+            </li>
+        </ul>
+    </nav>
+    </header>
+    
+    <h1>Project 1</h1>
+    <div class="slideshow">
+        <div class="projectslides">
+        <div class="numberslide">1/5</div>
+        <img src="images/Project1.png">
+        </div>
+    
+        <div class="projectslides">
+        <div class="numberslide">2/5</div>
+        <img src="images/Project2.png">
+        </div>
+        
+        <div class="projectslides">
+        <div class="numberslide">3/5</div>
+        <img src="images/Project3.png">
+        </div>
+        
+        <div class="projectslides">
+        <div class="numberslide">4/5</div>
+        <img src="images/Project4.png">
+        </div>
+        
+        <div class="projectslides">
+        <div class="numberslide">5/5</div>
+        <img src="images/Project5.png">
+        </div>
+        
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("projectslides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+    <h2>Project Goals</h2>
+    <p>My goal for the site is to showcase travel and talk about my experiences in different parts of the world. With brief snippets of my journey and images of the places I have been, I hope to encourage people to travel and see other parts of the world. I will be showcasing my ability to work with HTML5 and CSS. My personal goal is to use the skills I have learned from the course and apply them to create a website that is functional in achieving the website goal. My audience is young people, interested in travel and want to see what some places are like. The reason my audience is young is because I am more likely to connect with my peers because of my writing style and content choice. The focus of the website is travel, so most of my audience would need to have interest in travel and the topics surrounding it.
+</p>
+</div>
+</body>
+</html>
