@@ -122,6 +122,13 @@ p {
     padding: 1em;
     line-height: 2em;
 }
+#clickrstoryboard {
+    overflow: hidden;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 @media only screen and (max-width: 1050px) {
     #contactinfo {
         margin-left: 0;
@@ -131,36 +138,6 @@ p {
 }
 img {
     width: 100%;
-}
-.slideshow {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-}
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: #ff9300;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.prev:hover, .next:hover {
-  background-color: #282828;
-}
-.numberslide {
-  color: #ff9300;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
 }
