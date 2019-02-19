@@ -122,12 +122,22 @@ p {
     padding: 1em;
     line-height: 2em;
 }
-#clickrstoryboard {
+#clickrimages {
     overflow: hidden;
     width: 60%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3em;
+}
+.axure {
+    width: 800px;
+    height: 800px;
+    display: block;
+    margin: auto;
+    margin-bottom: 3em;
+    
+    
 }
 @media only screen and (max-width: 1050px) {
     #contactinfo {
