@@ -136,8 +136,14 @@ p {
     display: block;
     margin: auto;
     margin-bottom: 3em;
-    
-    
+}
+@media only screen and (max-width: 1050px) {
+    .axure {
+        width:400px;
+        height: 400px;
+        display: block;
+        margin: auto;
+    }
 }
 @media only screen and (max-width: 1050px) {
     #contactinfo {
