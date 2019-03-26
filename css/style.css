@@ -137,13 +137,25 @@ p {
     margin: auto;
     margin-bottom: 3em;
 }
-@media only screen and (max-width: 1050px) {
-    .axure {
-        width:400px;
-        height: 400px;
-        display: block;
-        margin: auto;
-    }
+.download {
+    text-align: center;
+    margin-bottom: 2em;
+}
+#sitemap1 {
+    overflow: hidden;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+}
+.wireframetask {
+    overflow: hidden;
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:-1em;
 }
 @media only screen and (max-width: 1050px) {
     #contactinfo {
